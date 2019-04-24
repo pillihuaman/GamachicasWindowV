@@ -12,7 +12,7 @@
 
 <body>
   <div class="container">
-      <form:form method = "POST" action = "/gamachicas.com.pe/addImagen">
+      <form:form method = "POST" action = "/Gamachicaswindow/addImagen" >
   <fieldset>
     <div id="legend">
       <legend class="">Registrar Informacion de la imagen</legend>

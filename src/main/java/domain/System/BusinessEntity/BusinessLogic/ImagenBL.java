@@ -2,8 +2,11 @@ package domain.System.BusinessEntity.BusinessLogic;
 
 
 
-import domain.System.BusinessEntity.CrudImagenBE;
+import java.awt.Image;
+import java.util.List;
 
+import domain.System.BusinessEntity.CrudImagenBE;
+import domain.System.BusinessEntity.Base.Imagen;
 import repository.System.DataAccess.MySql.ImagenDa;
 
 
@@ -16,5 +19,10 @@ public class ImagenBL {
 	    { 
 	        return ImagenDa.tesinsert(CrudImagenBE);
 	    }
+	  public static  List<Imagen> listImagen() 
+	    { 
+	        return ImagenDa.list();
+	    }
+
 
 }

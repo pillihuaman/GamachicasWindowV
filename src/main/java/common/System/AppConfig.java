@@ -1,4 +1,6 @@
 package common.System;
+import javax.servlet.annotation.MultipartConfig;
+
 import org.springframework.context.annotation.Bean;    
 import org.springframework.context.annotation.ComponentScan;    
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;    
 @EnableWebMvc    
-@Configuration    
+@Configuration 
+@MultipartConfig(maxFileSize = 5120)
 @ComponentScan({ "common.System.controller.*" })    
 public class AppConfig  extends WebMvcConfigurerAdapter{    
     @Bean    
